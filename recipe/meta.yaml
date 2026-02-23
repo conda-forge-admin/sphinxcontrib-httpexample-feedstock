@@ -18,11 +18,12 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - setuptools
+    - hatchling
     - pytest-runner
   run:
     - python >={{ python_min }}
-    - astunparse
+    - importlib-metadata
+    - importlib-resources
     - docutils
     - sphinx
     - sphinxcontrib-httpdomain
